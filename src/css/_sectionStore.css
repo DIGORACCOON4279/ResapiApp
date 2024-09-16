@@ -1,0 +1,106 @@
+
+/* section Store */
+
+.containerStore .sectionStore{
+    width:85vw;
+    max-width:1000px;
+    height:auto;
+    margin: 100px auto 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerStore .sectionStore .blockStore .mainInfo{
+    width: 70%;
+    margin:0px auto 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.containerStore .sectionStore .blockStore .store{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:20px;
+}
+.containerStore .sectionStore .blockStore .store .cardStore{
+    width:22%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #FFF;
+    overflow: hidden;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    transition:transform 0.3s ease-in-out;
+}
+.containerStore .sectionStore .blockStore .store .cardStore .view{
+    transform: scale(100%);
+    transition:transform 0.3s ease-in-out;
+}
+.containerStore .sectionStore .blockStore .store .cardStore:hover > .view{
+    transform: translateY(-5px) scale(105%);
+}
+.containerStore .sectionStore .blockStore .store .cardStore:hover > .cta{
+    opacity: 1;
+    visibility:visible;
+    transform:translateY(0px);
+}
+.containerStore .sectionStore .blockStore .store .cardStore .info{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:15px 15px 0px 5px;
+}
+.containerStore .sectionStore .blockStore .store .cardStore .info .paragraph{
+    padding:0px 0px 15px 15px;
+}
+.containerStore .sectionStore .blockStore .store .cardStore .info .paragraph p{
+    margin:0px;
+    color: #4B4B4B;
+    font-size: 16px;
+    font-weight: 500;
+}
+.containerStore .sectionStore .blockStore .store .cardStore .info .paragraph p:last-child{
+    color: #878787;
+    font-size: 13px;
+    font-weight: 500;
+}
+.containerStore .sectionStore .blockStore .store .cardStore .info .favoritos img{
+    background-color:#F2F2F2;
+    border-radius: 5px;
+    padding: 6px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 5px;
+}
+.containerStore .sectionStore .blockStore .store .cardStore .cta{
+    opacity: 0;
+    visibility:hidden;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #569F77;
+    padding: 10px;
+    border: 1px solid #569F77;
+    margin:0px 15px 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    transform:translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+.containerStore .sectionStore .blockStore .store .cardStore .cta:hover{
+    background-color: #7EB798;
+    border: 1px solid #7EB798;
+}

@@ -1,0 +1,135 @@
+
+/* Section Favoritos */
+
+.container .carouselFavoritos{
+    width:100vw;
+    height:auto;
+    margin: 0px auto 200px;
+    overflow:hidden;
+}
+.container .carouselFavoritos .blockCarousel{
+    width:85%;
+    max-width:1200px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    margin: auto;
+    padding: 20px 0px;
+    overflow: hidden;
+}
+.container .carouselFavoritos .blockCarousel .titleSection{
+    color: #878787;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.container .carouselFavoritos .blockCarousel .carousel{
+    display:  flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin: auto;
+    animation:sliderUno 160s linear infinite;
+}
+@keyframes sliderUno{
+    0%{
+        transform:translate(1%);
+    }
+    25%{
+        transform:translate(-20%);
+    }
+    50%{
+        transform:translate(-64%);
+    }
+    75%{
+        transform:translate(-20%);
+    }
+    100%{
+        transform:translate(1%);
+    }
+}
+.container .carouselFavoritos .blockCarousel .carousel .card{
+    width: 330px;
+    height: 410px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFF;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-in-out;
+}
+.container .carouselFavoritos .blockCarousel .carousel .card .view{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    object-position: center center;
+    vertical-align: middle;
+    border-radius: 10px 10px 0px 0px;
+    transform: scale(100%);
+    transition: transform 0.3s ease-in-out;
+}
+.container .carouselFavoritos .blockCarousel .carousel .card:hover > .view{
+    transform: translateY(-5px) scale(105%);
+}
+.container .carouselFavoritos .blockCarousel .carousel .card .info{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 0px;
+    overflow: hidden;
+}
+.container .carouselFavoritos .blockCarousel .carousel .card .info .section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.container .carouselFavoritos .blockCarousel .carousel .card .info .section .avatar{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.container .carouselFavoritos .blockCarousel .carousel .card .info .section .name{
+    color: #BAB8B8;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 18px;
+}
+.container .carouselFavoritos .blockCarousel .carousel .card .info .section .heartContainer,
+.container .carouselFavoritos .blockCarousel .carousel .card .info .section .deliciousContainer{
+    padding:6px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+}
+.container .carouselFavoritos .blockCarousel .carousel .card .info .section .heartContainer .heart,
+.container .carouselFavoritos .blockCarousel .carousel .card .info .section .deliciousContainer .delicious{
+    width: 18px;
+    height: 18px;
+}
+.container .carouselFavoritos .blockCarousel .carousel .card .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+}
+.container .carouselFavoritos .blockCarousel .carousel .card .description .paragraph{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+.container .carouselFavoritos .blockCarousel .carousel .card .description .paragraph:last-child{
+    color: #878787;
+    font-size: 13px;
+    font-weight: 500;
+}

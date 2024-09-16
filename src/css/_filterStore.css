@@ -1,0 +1,92 @@
+/* section Filter */
+
+.containerStore{
+    width:100%;
+    max-width: 1300px;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: auto;
+}
+.containerStore .sectionFilter{
+    width:fit-content;
+    height:100vh;
+    margin:0px auto 100px;
+    position: sticky;
+    top:71.6px;
+    left:-100%;
+    background-color: #ffffff;
+}
+.containerStore .sectionFilter .blockFilter .formFilter{
+    width:fit-content;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:10px;
+    padding: 20px;
+}
+.containerStore .sectionFilter .blockFilter .formFilter .fieldset{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.containerStore .sectionFilter .blockFilter .formFilter .fieldset .titleFieldset{
+    color: #4B4B4B;
+    font-size: 16px;
+    font-weight: 500;
+}
+.containerStore .sectionFilter .blockFilter .formFilter .fieldset:nth-child(3) .select{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #4B4B4B;
+    font-size: 16px;
+    font-weight: 500;
+}
+.containerStore .sectionFilter .blockFilter .formFilter .fieldset .select{
+    padding:10px 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border:1px solid #f2f2f2;
+    color: #878787;
+    font-size: 13px;
+    font-weight: 500;
+}
+.containerStore .sectionFilter .blockFilter .formFilter .ctaFilter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    margin-top: 20px;
+}
+.containerStore .sectionFilter .blockFilter .formFilter .ctaFilter .submit,
+.containerStore .sectionFilter .blockFilter .formFilter .ctaFilter .reset{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding:10px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    transition:0.3s ease-in-out;
+}
+.containerStore .sectionFilter .blockFilter .formFilter .ctaFilter .reset{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+}
+.containerStore .sectionFilter .blockFilter .formFilter .ctaFilter .submit:hover,
+.containerStore .sectionFilter .blockFilter .formFilter .ctaFilter .reset:hover{
+    background-color: #4B4B4B;
+    border: 1px solid #4B4B4B;
+    color: #ffffff;
+}

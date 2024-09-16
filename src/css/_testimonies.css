@@ -1,0 +1,95 @@
+
+/* Section testimomios */
+
+.container .testimonios{
+    width:100vw;
+    height:auto;
+    margin: 0px auto 200px;
+}
+.container .testimonios .blockTestimonios {
+    width: 85%;
+    max-width:1200px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        ".     grid1  ."
+        "grid2 grid1 grid3"
+        "grid2 grid4 grid3"
+        "grid5 grid4 grid6"
+        "grid5 grid7 grid6"
+        ".     grid7  .";
+    gap:40px;
+}
+.container .testimonios .blockTestimonios .cardsTestimonios{
+    width:100%;
+    height:auto;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.container .testimonios .blockTestimonios .cardsTestimonios:nth-child(1) {
+    grid-area: grid1;
+}
+
+.container .testimonios .blockTestimonios .cardsTestimonios:nth-child(2) {
+    grid-area: grid2;
+}
+
+.container .testimonios .blockTestimonios .cardsTestimonios:nth-child(3) {
+    grid-area: grid3;
+}
+
+.container .testimonios .blockTestimonios .cardsTestimonios:nth-child(4) {
+    grid-area: grid4;
+}
+
+.container .testimonios .blockTestimonios .cardsTestimonios:nth-child(5) {
+    grid-area: grid5;
+}
+
+.container .testimonios .blockTestimonios .cardsTestimonios:nth-child(6) {
+    grid-area: grid6;
+}
+
+.container .testimonios .blockTestimonios .cardsTestimonios:nth-child(7) {
+    grid-area: grid7;
+}
+.container .testimonios .blockTestimonios .cardsTestimonios .talkative{
+    width:50px;
+    height:auto;
+    align-self: self-start;
+}
+.container .testimonios .blockTestimonios .cardsTestimonios .paragraph{
+    color: #878787;
+    font-size: 1rem;
+    font-weight: 500;
+    text-wrap:wrap;
+}
+.container .testimonios .blockTestimonios .cardsTestimonios .user{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap:30px;
+}
+.container .testimonios .blockTestimonios .cardsTestimonios .user .nombreUser{
+    align-self: center;
+    color: #BAB8B8;
+    font-size: 13px;
+    font-weight: 500;
+}
+.container .testimonios .blockTestimonios .cardsTestimonios .user .avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self:self-end;
+}

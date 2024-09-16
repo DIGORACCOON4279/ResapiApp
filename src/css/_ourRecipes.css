@@ -1,0 +1,48 @@
+
+/* Section Nuestras Recetas */
+
+.container .nuestras{
+    width:100vw;
+    height:auto;
+    margin: 0px auto 200px;
+    overflow:hidden;
+}
+.container .nuestras .blockRecetas{
+    width:85%;
+    max-width:1200px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    margin: auto;
+}
+.container .nuestras .blockRecetas .info{
+    width:50%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    margin: auto;
+    text-align: center;
+}
+.container .nuestras .blockRecetas .info .titleSection{
+    color: #878787;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.container .nuestras .blockRecetas .info .paragraph{
+    color: #878787;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.container .nuestras .blockRecetas .cellImages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+}

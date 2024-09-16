@@ -1,0 +1,94 @@
+
+/* Section Los más vistos */
+
+.container .carouselContainer{
+    width:100vw;
+    height:auto;
+    margin: 0px auto 200px;
+    overflow:hidden;
+}
+.container .carouselContainer .blockCarousel{
+    width:85%;
+    max-width:1200px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    margin: auto;
+    padding: 20px 0px;
+    overflow: hidden;
+}
+.container .carouselContainer .blockCarousel .titleSection{
+    color: #878787;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.container .carouselContainer .blockCarousel .carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin: auto;
+    animation:slider 120s linear infinite;
+}
+@keyframes slider{
+    0%{
+        transform:translate(-60%);
+    }
+    25%{
+        transform:translate(-29%);
+    }
+    50%{
+        transform:translate(0%);
+    }
+    75%{
+        transform:translate(-29%);
+    }
+    100%{
+        transform:translate(-60%);
+    }
+}
+.container .carouselContainer .blockCarousel .carousel .card{
+    width: 250px;
+    min-height: 320px;
+    border-radius: 10px;
+    background-color: #FFF;
+    overflow: hidden;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    transition:transform 0.3s ease-in-out;
+}
+.container .carouselContainer .blockCarousel .carousel .card:hover > .view{
+    transform:translateY(-5px) scale(105%);
+}
+.container .carouselContainer .blockCarousel .carousel .card .view{
+    width: 250px;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+    transform:scale(100%);
+    transition:transform 0.3s ease-in-out;
+}
+.container .carouselContainer .blockCarousel .carousel .card .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.container .carouselContainer .blockCarousel .carousel .card .info .star{
+    width: 24px;
+    height: 24px;
+    align-self: self-end;
+}
+.container .carouselContainer .blockCarousel .carousel .card .info .section{
+    width: 60px;
+    height: 60px;
+}
+.container .carouselContainer .blockCarousel .carousel .card .info .paragraph{
+    color: #4B4B4B;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}

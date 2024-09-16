@@ -1,0 +1,250 @@
+
+/* Container Description */
+
+.containerDescription{
+    width:100%;
+    height:auto;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:150px;
+}
+.containerDescription .sectionDescription,
+.containerDescription .sectionComments,
+.containerDescription .sectionCards{
+    width:85%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.containerDescription .sectionDescription .blockDescription .titleSection,
+.containerDescription .sectionComments .blockComments .titleSection,
+.containerDescription .sectionCards .blockCards .titleSection{
+    width:100%;
+    height: auto;
+    text-align: left;
+    color: #878787;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom:50px;
+}
+
+.containerDescription .sectionDescription .blockDescription .description{
+    width:auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap:20px;
+}
+.containerDescription .sectionDescription .blockDescription .titleSection .delicious{
+    width:30px;
+}
+.containerDescription .sectionDescription .blockDescription .description .descriptionCard:nth-child(1){
+    width:auto;
+    height: auto;
+    border-radius: 20px;
+    padding: 40px;
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.containerDescription .sectionDescription .blockDescription .description .descriptionCard:nth-child(1) .wrapDescription {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.containerDescription .sectionDescription .blockDescription .description .descriptionCard .wrapDescription .titleDescription{
+    color: #4B4B4B;
+    font-size: 24px;
+    font-weight: 600;
+}
+.containerDescription .sectionDescription .blockDescription .description .descriptionCard .wrapDescription .sectionPreparation{
+    color: #4B4B4B;
+    font-size: 16px;
+    font-weight: 400;
+}
+.containerDescription .sectionDescription .blockDescription .description .descriptionCard:nth-child(2){
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+.containerDescription .sectionDescription .blockDescription .description .descriptionCard:nth-child(2) .imgDescription{
+    width:auto;
+    height: auto;
+    object-fit: cover;
+    filter:brightness(150%);
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.containerDescription .sectionDescription .blockDescription .description .descriptionCard:nth-child(2) .wrapRecipes{
+    width:auto;
+    height: auto;
+    border-radius: 20px;
+    padding: 40px;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.containerDescription .sectionDescription .blockDescription .description .descriptionCard:nth-child(2) .wrapRecipes .titleRecipe{
+    color: #4B4B4B;
+    font-size: 24px;
+    font-weight: 600;
+}
+.containerDescription .sectionDescription .blockDescription .description .descriptionCard:nth-child(2) .wrapRecipes .sectionRecipe .paragraph{
+    color: #4B4B4B;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Section Comments */
+
+.containerDescription .sectionComments .blockComments .comments{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:40px;
+    margin: auto;
+}
+.containerDescription .sectionComments .blockComments .comments .cardComments{
+    width:48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:20px;
+    border-radius: 20px;
+    background: #FFF;
+    padding:20px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.containerDescription .sectionComments .blockComments .comments .cardComments .avatar{
+    width:50px;
+}
+.containerDescription .sectionComments .blockComments .comments .cardComments .rowInfo{
+    display: flex;
+    flex-direction: column;
+}
+.containerDescription .sectionComments .blockComments .comments .cardComments .rowInfo .commentsInfo .paragraph:nth-child(1){
+    color: #4B4B4B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.containerDescription .sectionComments .blockComments .comments .cardComments .rowInfo .commentsInfo .paragraph:nth-child(2){
+    color: #BAB8B8;
+    font-size: 10px;
+    font-weight: 400;
+}
+.containerDescription .sectionComments .blockComments .comments .cardComments .rowInfo .commentsInfo .paragraph:nth-child(3){
+    color: var(--Dark, #4B4B4B);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.containerDescription .sectionComments .blockComments .comments .cardComments .rowInfo .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap:5px;
+}
+.containerDescription .sectionComments .blockComments .comments .cardComments .rowInfo .icons div{
+    padding:  5px 10px;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+}
+
+/* Others Recipes */
+
+.containerDescription .sectionCards .blockCards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:20px;
+}
+.containerDescription .sectionCards .blockCards .cards{
+    width:auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:70px;
+}
+.containerDescription .sectionCards .blockCards .cardStore{
+    width:auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #FFF;
+    overflow: hidden;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    transition:transform 0.3s ease-in-out;
+}
+
+.containerDescription .sectionCards .blockCards .cardStore .view{
+    transform: scale(100%);
+    transition:transform 0.3s ease-in-out;
+}
+.containerDescription .sectionCards .blockCards .cardStore:hover > .view{
+    transform: translateY(-5px) scale(105%);
+}
+.containerDescription .sectionCards .blockCards .store .cardStore:hover > .cta{
+    opacity: 1;
+    visibility:visible;
+    transform:translateY(0px);
+}
+.containerDescription .sectionCards .blockCards .cardStore .info{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:15px 15px 0px 5px;
+}
+.containerDescription .sectionCards .blockCards .cardStore .info .paragraph{
+    padding:0px 0px 15px 15px;
+}
+.containerDescription .sectionCards .blockCards .cardStore .info .paragraph p{
+    margin:0px;
+    color: #4B4B4B;
+    font-size: 16px;
+    font-weight: 500;
+}
+.containerDescription .sectionCards .blockCards .cardStore .info .paragraph p:last-child{
+    color: #878787;
+    font-size: 13px;
+    font-weight: 500;
+}
+.containerDescription .sectionCards .blockCards .cardStore .info .favoritos img{
+    background-color:#F2F2F2;
+    border-radius: 5px;
+    padding: 6px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 5px;
+}
+

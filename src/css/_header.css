@@ -1,0 +1,99 @@
+
+/* Header */
+
+.header{
+    width:100%;
+    height:auto;
+    background-color: #66937a;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    overflow: hidden;
+    z-index: 99;
+}
+.header .headerCentered{
+    width:85%;
+    max-width: 1200px;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    gap:20px;
+    margin:auto;
+}
+.header .headerCentered .logoIcon .logo{
+    width:48px;
+    height:auto;
+}
+.header .headerCentered .menu{
+    width:100%;
+    height:auto;
+}
+.header .headerCentered .menu ul{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+.header .headerCentered .menu ul li{
+    height:auto;
+    list-style-type: none;
+}
+.header .headerCentered .menu ul li .section{
+    height:auto;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#f6f6f6;
+    font-size:0.9rem ;
+    font-weight: 600;
+    transform: scale(100%);
+    transition: transform 0.3s ease-in-out;
+}
+.header .headerCentered .menu ul li .section:hover{
+    background-color: #7EB798;
+    transform: scale(105%);
+    color:#ffffff;
+}
+.header .headerCentered .userBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap:15px;
+}
+.header .headerCentered .userBlock ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap:15px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+.header .headerCentered .userBlock ul li{
+    list-style-type: none;
+}
+.header .headerCentered .userBlock ul li a{
+    text-decoration: none;
+}
+.header .headerCentered .userBlock img{
+    width:28px;
+    border-radius: 50%;
+    border:1px solid #ffffff;
+    cursor: pointer;
+    transform: scale(100%);
+    transition: transform 0.3s ease-in-out;
+}
+.header .headerCentered .userBlock img:hover{
+    transform: scale(105%);
+    background-color: #7EB798;
+}
