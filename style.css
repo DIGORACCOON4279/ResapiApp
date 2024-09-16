@@ -182,7 +182,7 @@ html{
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    gap:30px;
+    gap:70px;
     margin:auto;
 }
 .container .menu .containerMenu .cards .cardMenu{
@@ -870,7 +870,7 @@ html{
     margin: auto;
 }
 .containerStore .sectionFilter{
-    width:20vw;
+    width:fit-content;
     height:auto;
     margin:0px auto 100px;
     position: sticky;
@@ -932,7 +932,7 @@ html{
     background-color: #000000;
     border: 1px solid #000000;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
     transition:0.3s ease-in-out;
 }
@@ -951,13 +951,18 @@ html{
 /* section Store */
 
 .containerStore .sectionStore{
-    width:80vw;
+    width:85vw;
+    max-width:1000px;
     height:auto;
-    margin: 12.5% auto 100px;
+    margin: 100px auto 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .containerStore .sectionStore .blockStore .mainInfo{
     width: 70%;
-    margin:0px auto 100px;
+    margin:0px auto 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -975,7 +980,7 @@ html{
     gap:20px;
 }
 .containerStore .sectionStore .blockStore .store .cardStore{
-    width:auto;
+    width:22%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -1032,7 +1037,7 @@ html{
     opacity: 0;
     visibility:hidden;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
     border-radius: 10px;
     background-color: #569F77;
@@ -1057,6 +1062,7 @@ html{
 }
 .containerBlog .sectionBlog{
     width:85%;
+    max-width: 1200px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -1223,10 +1229,11 @@ html{
     justify-content: center;
     align-items: center;
     margin:30px auto;
-    position: relative;
+    /* position: relative; */
 }
 .containerArticle .heroBlog .blockArticle{
     width:70%;
+    max-width: 988px;
     height:auto;
     color: #FFF;
     font-weight: 700;
@@ -1240,8 +1247,8 @@ html{
     font-size: 35px;
 }
 .containerArticle .section{
-    width: 30%;
-    height:fit-content;
+    width: fit-content;
+    height:auto;
     border-radius: 10px;
     background: #F6F6F6;
     box-shadow: 4px 4px 10px 0px #00000040;
@@ -1250,10 +1257,10 @@ html{
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    /* transform: translate(143%, -100px); */
-    position:absolute;
+    transform: translate(180%, -100px);
+    /* position:absolute;
     bottom:10px;
-    right:15%;
+    right:15%; */
 }
 .containerArticle .section .infoCard{
     width: 100%;
@@ -1284,14 +1291,18 @@ html{
     font-weight: 500;
     align-self: self-end;
 }
+
+/* Section Article */
+
 .containerArticle .sectionArticle{
     width:70%;
+    max-width: 988px;
     height:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 180px auto;
+    margin: 0px auto 150px;
 }
 .containerArticle .sectionArticle .paragraphArticle{
     color: #878787;
@@ -1303,10 +1314,9 @@ html{
     font-weight: 600;
     text-decoration:underline;
 }
-
 .containerArticle .sectionArticle .pizzaResapiUno{
     width:100%;
-    height:50vh;
+    height:350px;
     margin: 50px auto;
     background-image: url("./img/pizzaBlog1.webp");
     /* background-color: #ffc690 !important; */
@@ -1368,6 +1378,7 @@ html{
 .containerDescription .sectionComments,
 .containerDescription .sectionCards{
     width:85%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
