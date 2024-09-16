@@ -26,6 +26,7 @@ html{
 }
 .header .headerCentered{
     width:85%;
+    max-width: 1200px;
     height:auto;
     display: flex;
     flex-direction: row;
@@ -124,14 +125,17 @@ html{
     width:100vw;
     height: auto;
     margin-top: 70px;
-
+    overflow:hidden;
 }
-.container .heroSection .carousel-caption{
+.container .heroSection .carouselHeroSection{
     width:85%;
-    height:auto;
-    position:absolute;
-    top:25%;
-    left:10%;
+    max-width: 1200px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin:auto;
     text-align: left;
 }
 .container .heroSection .carousel-caption h1{
@@ -159,6 +163,7 @@ html{
 }
 .container .menu .containerMenu{
     width:85%;
+    max-width: 1200px;
     margin:auto;
 }
 .container .menu .containerMenu .titleSection{
@@ -175,8 +180,10 @@ html{
     margin:auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
+    gap:30px;
+    margin:auto;
 }
 .container .menu .containerMenu .cards .cardMenu{
     width:338px;
@@ -239,9 +246,11 @@ html{
     width:100vw;
     height:auto;
     margin: 0px auto 200px;
+    overflow:hidden;
 }
 .container .carouselContainer .blockCarousel{
     width:85%;
+    max-width:1200px;
     height:auto;
     display: flex;
     flex-direction: column;
@@ -331,9 +340,11 @@ html{
     width:100vw;
     height:auto;
     margin: 0px auto 200px;
+    overflow:hidden;
 }
 .container .nuestras .blockRecetas{
     width:85%;
+    max-width:1200px;
     height:auto;
     display: flex;
     flex-direction: column;
@@ -377,9 +388,11 @@ html{
     width:100vw;
     height:auto;
     margin: 0px auto 200px;
+    overflow:hidden;
 }
 .container .carouselFavoritos .blockCarousel{
     width:85%;
+    max-width:1200px;
     height:auto;
     display: flex;
     flex-direction: column;
@@ -421,7 +434,6 @@ html{
         transform:translate(1%);
     }
 }
-
 .container .carouselFavoritos .blockCarousel .carousel .card{
     width: 330px;
     height: 410px;
@@ -431,7 +443,6 @@ html{
     box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease-in-out;
 }
-
 .container .carouselFavoritos .blockCarousel .carousel .card .view{
     width: 100%;
     height: 210px;
@@ -454,7 +465,6 @@ html{
     align-items: center;
     padding: 15px 15px 0px;
     overflow: hidden;
-
 }
 .container .carouselFavoritos .blockCarousel .carousel .card .info .section{
     display: flex;
@@ -517,6 +527,7 @@ html{
 }
 .container .testimonios .blockTestimonios {
     width: 85%;
+    max-width:1200px;
     display: grid;
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
@@ -613,6 +624,7 @@ html{
 }
 .container .appMobile .display{
     width:85%;
+    max-width:1200px;
     margin:auto;
     display: flex;
     flex-direction: row;
@@ -689,21 +701,28 @@ html{
     margin:auto ;
     background-color: #66937a;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
+    overflow:hidden;
+}
+.footer .containerFooter{
+    width:85% ;
+    max-width:1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 5px;
     gap:10px;
 }
 .footer .columns{
-    width:85% ;
+    width:100% ;
     height:auto;
-    margin:auto ;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin: auto;
-    padding: 40px 0px;
 }
 .footer .columns .apps{
     height:auto;
@@ -802,11 +821,16 @@ html{
 .footer .columns .menu .nav ul li .item img{
     width:50px;
 }
+
+/* Social Media */
+
 .footer .socialMedia{
+    width:100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
+    margin:auto;
     gap:20px;
 }
 .footer .socialMedia a{
@@ -818,7 +842,17 @@ html{
 .footer .socialMedia a:hover{
     background-color: #4B4B4B;
 }
+
+/* Developer */
+
 .footer .developer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+.footer .developer p{
     color: #ffffff;
     font-size: 0.5rem;
     font-weight: 500;
